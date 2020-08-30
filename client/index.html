@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bet Dapp</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./coinflip.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">My First Dapp</h1>
+            <p class="lead">To the moon! </p>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <h2>Bet your Ether here!</h2>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="bet-input" placeholder="Bet Amount. Try atleast 1 ether!" aria-label="Recipient's username" aria-describedby="place-amount-button">
+                <div class="input-group-append">
+                    <button id="place-amount-button" class="btn btn-outline-secondary">Place bet amount</button>
+                </div>
+                <h3>Bet Amount:</h3>
+                <h3 style="color: red" id="bet-amount">
+                </h3>
+            </div>
+        </div>
+        <div>
+
+            <div class="input-group mb-3">
+                <button id="submit-button" class="btn btn-success">MAKE THE BET!</button>
+            </div>
+        </div>
+        <div>
+            <h3>Amount won:</h3>
+            <h3 style="color: red" id="bet-winnings">
+            </h3>
+        </div>
+    </div>
+</body>
+
+</html>
